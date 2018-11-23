@@ -3,8 +3,10 @@
 First run the following command to generate a new rails app.
 
 ```
-$ docker-compose run web rails new . --force --database=postgresql --skip-bundle
+$ docker-compose run web rails new myapp --force --database=postgresql --skip-bundle
 ```
+
+You can also simply create a folder named `myapp` containing your existing rails project.
 
 Now that you have all the necessary files, run this command to build the image again:
 

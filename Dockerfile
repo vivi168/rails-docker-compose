@@ -9,7 +9,5 @@ RUN apt-get update -qq && \
 RUN mkdir /workspace
 WORKDIR /workspace
 
-COPY Gemfile /workspace/Gemfile
-COPY Gemfile.lock /workspace/Gemfile.lock
+COPY myapp /workspace
 RUN bundle install
-COPY . /workspace
